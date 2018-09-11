@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -24,7 +25,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/img/parallax1.jpg');
+    background-image: url('img/parallax1.jpg');
     min-height: 100%;
 }
 
@@ -36,7 +37,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/img/parallax3.jpg");
+    background-image: url("img/parallax3.jpg");
     min-height: 400px;
 }
 
@@ -80,7 +81,7 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min"  id="home" >
 </div>
-<div class="w3-display-middle-top" style="border: 2px solid black;padding: 0px 55px 10px 55px;background-color: rgba(0,0,0,.35);color:white;text-align: center">
+<div class="w3-display-middle-top" style="border: .5px solid rgba(0,0,0,.05);padding: 0px 65px 15px 65px;color:white;text-align: center">
    <div  style="white-space:nowrap;" > 
         <span class="w3-center w3-bold w3-xxxlarge w3-wide w3-animate-opacity"><span class="w3-hide-small" style="font-size: 70px">Saurabh Trivedi</span></span> <hr/>
   </div>
@@ -158,40 +159,84 @@ body, html {
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h3 class="w3-opacity"><b>Master of Science - Computer Science</b></h3>
+          <h5 class="w3-opacity"><b>San Diego State University, California, USA</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2019</h6>
+          <!-- <p>Web Development! All I need to know in one place</p> -->
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h3 class="w3-opacity"><b>Bachelor of Engineering - Information Technology</b></h3>
+          <h5 class="w3-opacity"><b>Gujarat Technological University, Gujarat, India</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2017</h6>
+          <!-- <p>Master Degree</p> --><br>
+        </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+      <div class="w3-container">
+        <h3 class="w3-opacity"><b>Web Development Intern</b></h3>
+        <h5 class="w3-opacity"><b>Qualcomm Incorporated, California, USA.</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+        <p>Full stack web developer responsible for the end-to-end development using PHP of Qualcomm Onboard Portal. Create database schema to achieve functionality and efficiency of infrastructure, handling database operation. Working with data manipulation, data Encoding and Decoding, data securing using hashing algorithms, encryption and decryption. Train and provide documentation on various features and technology to maximize operational efficiency. Designing and maintaining Qualcomm Summer Intern website with upcoming events details. Test and deploy websites with version controlling using Git on Qualcomm GitHub. Write Python scripts to clean data from the Excel sheet.</p>
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h3 class="w3-opacity"><b>Web Developer</b></h3>
+        <h5 class="w3-opacity"><b>Havmor, Gujarat, India.</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - May2017</h6>
+        <p>Developed large and complex design web applications in Java (JSP and Servlets). Collaborated with designers to create a clean interface and quality user experience with Angular and jQuery. Carried out a quality assurance test to discover bugs and errors and optimize usability. Complete detailed development task for front-end and back-end side of web applications. 
+            </p>
+        <hr>
+      </div>
+      <div class="w3-container">
+          <h3 class="w3-opacity"><b>Project Intern</b></h3>
+        <h5 class="w3-opacity"><b>Project Intern | Renaissance Educare, Gujarat, India.</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Apr 2016</h6>
+        <p>Created an online Practice Test (GRE340) for Renaissance Educare using JSP and Servlets. Designed, developed and enhanced the look and feel using HTML, CSS and JavaScript, jQuery and Ajax Gathered requirements in the early stages of the development process to build architecture for GRE340 Identified, documented and reported bugs, errors, interoperability flaws also executed software test cases in JUnit.</p><br>
+      </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-laptop-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+ 
 
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Shopping App | </b> Android, Java, Firebase, NoSQL and JSON</h5>
+          <p>Developed a fully functional Android application to browse, search, filter and buy cameras.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SDSU Class Registration | </b>Android, Java, Volley, NoSQL and JSON</h5>
+          <p>Designed Android application for SDSU Class Registration which allowed students to add and drop multiple class.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Online Camera Store | </b>Servlets, JSP, JavaScript, Ajax, and jQuery</h5>
+          <p>Developed an online storefront for Cameras with detailed work on every feature.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Online Inventory System |</b> Perl, State Management, Sessions & Cookies, Encryption and Data Serialization.</h5>
+          <p>Design web application for merchant to add, edit and remove inventory for their business.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SDSU Marathon |</b> PHP, MySQL, JavaScript, Ajax, HTML and CSS</h5>
+          <p>Design application for the event with applicant registration. It validates form data at client and server side.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Online Library System |</b> PHP, MySQL, JavaScript, HTML and CSS</b></h5>
+          <p>Created a web application using PHP based on reuse system, including the software planning, requirement analysis, alternative analysis, reuse modification peer review, architecture, design and development, test planning and deployment.</p><br>
+        </div>
+      </div>
   </div>
 </div>
 
@@ -223,9 +268,9 @@ body, html {
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Diego, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 6197516010<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: thesaurabh@yahoo.com<br>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
       <form action="/action_page.php" target="_blank">
@@ -257,16 +302,15 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <!-- Add Google Maps -->
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(32.715736, -117.161087);
   var mapOptions= {
-    center:myCenter,
+    center:myCenter,  
     zoom:12, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
@@ -307,7 +351,7 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?keyAIzaSyCG1VvcsqV9fWnVaC-RztxpyL9JMKi1h2U&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
