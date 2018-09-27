@@ -2,7 +2,7 @@
 // the message
 $name = $_POST['name'];
 $email = $_POST['email'];
-$messege = $name + "\n"+ $_POST['messege'];
+$messege = $name."\n".$_POST['messege'];
 $headers = "From: thesaurabh@yahoo.com";
 $subject = "Automatic mail: From Saurabh Trivedi";
 
@@ -16,7 +16,7 @@ $txt = "Thank you contacting me, \n I will get back to you soon. \n\n Best Regar
 //mail($to,$subject,$txt,$headers);
 mail($email,$subject,$txt,$headers);
 
-$headers = "from: " + $email ;
+$headers = "From: ".$email ;
 $subject = "intres to contact";
 mail("thesaurabh@yahoo.com",$subject,$messege,$headers);
 ?>
