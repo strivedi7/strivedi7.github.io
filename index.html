@@ -3,6 +3,7 @@
 <title>Saurabh Trivedi</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,6 +45,9 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+.white-font{
+  color: white;
+}
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -64,9 +68,9 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
-    </a>
+    </a> -->
   </div>
 
   <!-- Navbar on small screens -->
@@ -104,7 +108,7 @@ body, html {
     <!-- Hide this text on small devices -->
     <div class="w3-col m4 w3-hide-small w3-padding-large">
     	<p><b><i class="fa fa-user w3-margin-right"></i>Saurabh Trivedi</b></p><br>
-      <p style="text-align:justify">Welcome to my website. I am currently pursuing my Master in Computer Science at San Diego State University, my educational qualification along with my past work experience in the IT industry has equipped me with the analytical and technical skills making me an ideal candidate seeing internship in software development in the summer of 2018.
+      <p style="text-align:justify">Welcome to my website. I am currently pursuing my Master in Computer Science at San Diego State University, my educational qualification along with my past work experience in the IT industry has equipped me with the analytical and technical skills making me an ideal candidate in software development.
 
         I am skilled in Java, C, C++, SQL, MYSQL, PHP, Perl, JavaScript, Cascading Style Sheets (CSS), and HTML.
         
@@ -112,15 +116,15 @@ body, html {
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Java</p>
+  <p class="w3-wide"><i class="fab fa-java"></i>Java</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>JavaScript / JavaScript Frameworks</p>
+  <p class="w3-wide"><i class="fab fa-js"></i>JavaScript Frameworks</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Databse</p>
+  <p class="w3-wide"><i class="fas fa-database"></i>Databse</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
   </div>
@@ -154,8 +158,8 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+  <!-- <h3 class="w3-center">MY WORK</h3> -->
+  <!-- <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br> -->
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -273,7 +277,7 @@ body, html {
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: thesaurabh@yahoo.com<br>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
+      <form action="/mail.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -283,7 +287,7 @@ body, html {
           </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <button class="w3-button w3-black w3-right w3-section" type="submit" id="mailto">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </form>
@@ -335,7 +339,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white" + " white-font";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
@@ -350,6 +354,15 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+$( "#mailto" ).click(function(e) {
+  e.preventDefault();
+  $.ajax({url: "mail.php", success: function(result){
+        alert(result)
+    }});
+});
+
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?keyAIzaSyCG1VvcsqV9fWnVaC-RztxpyL9JMKi1h2U&callback=myMap"></script>
 <!--
