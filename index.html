@@ -358,7 +358,7 @@ function toggleFunction() {
 $( "#contact" ).submit(function(e) {
   e.preventDefault();
   $.ajax({
-    type: "get",
+    type: "POST",
     url: "mail.php",
     data: { 
       name: $('[name=Name]').val(), 
