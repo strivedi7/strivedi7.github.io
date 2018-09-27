@@ -357,7 +357,14 @@ function toggleFunction() {
 
 $( "#mailto" ).click(function(e) {
   e.preventDefault();
-  $.ajax({url: "mail.php", success: function(result){
+  $.ajax({
+    url: "mail.php",
+    data: { 
+      name: $('[name=Name]').val(), 
+      email: $('[name=Email]').val(), 
+      messege: $('[name=Message]').val()
+    },
+    success: function(result){
         alert(result)
     }});
 });
