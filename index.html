@@ -52,12 +52,78 @@ body, html {
 .font-2xsize{
   font-size: 2em;
 }
+
+#resume{
+  text-decoration: none;
+}
+.resume:hover{
+  opacity: .7!important; 
+}
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
 }
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .view {
+        font-size: 35px!important;
+    }
+    .view2 {
+        font-size: 14px!important;
+  
+    }
+    .viewbox{
+      margin: 0;
+      border: .5px solid rgba(0, 0, 0, 0.05);
+      padding: 0px 35px 15px 35px;
+      color:white;
+      text-align: center;
+      width: 100%;
+      left:35%!important;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 980px) {
+  .view {
+        font-size: 55px!important;
+    }
+    .view2 {
+        font-size:35px!important;
+    }
+    .viewbox{
+      margin: 0;
+      border: .5px solid rgba(0, 0, 0, 0.05);
+      padding: 0px 65px 15px 65px;
+      color:white;
+      text-align: center;
+      width: 100%;
+      left:35%!important;
+    }
+}
+
+@media screen and (min-width: 980px){
+    .view {
+        font-size: 75px!important;
+    }
+    .view2 {
+        font-size: 60px!important;
+    }
+    .viewbox{
+      margin: 0;
+      border: .5px solid rgba(0, 0, 0, 0.05);
+      padding: 0px 65px 15px 65px;
+      color:white;
+      text-align: center;
+      width: 50%
+    }
+}
+
+
+
 
 </style>
 <body>
@@ -89,12 +155,12 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min"  id="home" >
 </div>
-<div class="w3-display-middle-top" style="border: .5px solid rgba(0,0,0,.05);padding: 0px 65px 15px 65px;color:white;text-align: center">
+<div class="w3-display-middle-top viewbox">
    <div  style="white-space:nowrap;" > 
-        <span class="w3-center w3-bold w3-xxxlarge w3-wide w3-animate-opacity"><span class="col-6" style="font-size: 70px">Saurabh Trivedi</span></span> <hr/>
+        <span class="w3-center w3-bold w3-xxxlarge w3-wide w3-animate-opacity view">Saurabh Trivedi</span> <hr/>
   </div>
   <div style="white-space:nowrap;">    
-    <span class="w3-center w3-padding-large w3-bold w3-xxxlarge w3-wide w3-animate-opacity"><strong>DESIGNER / &lt;CODER&gt;</span></strong>
+    <span class="w3-center w3-padding-large w3-bold w3-xxxlarge w3-wide w3-animate-opacity view2"><strong>DESIGNER / &lt;CODER&gt;</span></strong>
   </div>
   
 </div>
@@ -144,12 +210,12 @@ body, html {
     Projects Done
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
+    <span class="w3-xlarge">50+</span><br>
+    Courses 
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
+    <span class="w3-xlarge">8+</span><br>
+    Coding Languages
   </div>
 </div>
 
@@ -211,10 +277,6 @@ body, html {
 
     <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-laptop-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
- 
-
-
-
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Shopping App | </b> Android, Java, Firebase, NoSQL and JSON</h5>
           <p>Developed a fully functional Android application to browse, search, filter and buy cameras.</p>
@@ -244,6 +306,9 @@ body, html {
           <h5 class="w3-opacity"><b>Online Library System |</b> PHP, MySQL, JavaScript, HTML and CSS</b></h5>
           <p>Created a web application using PHP based on reuse system, including the software planning, requirement analysis, alternative analysis, reuse modification peer review, architecture, design and development, test planning and deployment.</p><br>
         </div>
+      </div>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <a id="resume" href="files/resume.pdf" download><h2 class="w3-text-grey w3-padding-16 resume"><i class="far fa-file-pdf fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Download Printable Resume</h2></a>
       </div>
   </div>
 </div>
@@ -278,7 +343,7 @@ body, html {
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Diego, US<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 6197516010<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: thesaurabh@yahoo.com<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:thesaurabh@yahoo.com" style="text-decoration:none">thesaurabh@yahoo.com<br></a>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note.</p>
       <!-- <form action="/mail.php" target="_blank" id="contact">
@@ -371,8 +436,6 @@ $( "#contact" ).submit(function(e) {
         alert(result)
     }});
 });
-
-
 </script>
 <!-- <script src="https://maps.googleapis.com/maps/api/js?keyAIzaSyCG1VvcsqV9fWnVaC-RztxpyL9JMKi1h2U&callback=myMap"></script> -->
 <!--
