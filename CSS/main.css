@@ -1,0 +1,110 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../img/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../img/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("../img/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+.white-font{
+  color: white;
+}
+.font-2xsize{
+  font-size: 2em;
+}
+
+#resume{
+  text-decoration: none;
+}
+.resume:hover{
+  opacity: .7!important; 
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .view {
+        font-size: 35px!important;
+    }
+    .view2 {
+        font-size: 12px!important;
+  
+    }
+    .viewbox{
+      margin: 0;
+      padding: 0px 35px 15px 35px;
+      color:white;
+      text-align: center;
+      width: 100%;
+      left:35%!important;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 980px) {
+  .view {
+        font-size: 55px!important;
+    }
+    .view2 {
+        font-size:26px!important;
+    }
+    .viewbox{
+      margin: 0;
+      border: .5px solid rgba(0, 0, 0, 0.05);
+      padding: 0px 65px 15px 65px;
+      color:white;
+      text-align: center;
+      width: 100%;
+      left:35%!important;
+    }
+}
+
+@media screen and (min-width: 980px){
+    .view {
+        font-size: 75px!important;
+    }
+    .view2 {
+        font-size: 40px!important;
+    }
+    .viewbox{
+      margin: 0;
+      border: .5px solid rgba(0, 0, 0, 0.05);
+      padding: 0px 65px 15px 65px;
+      color:white;
+      text-align: center;
+      width: 50%
+    }
+}
