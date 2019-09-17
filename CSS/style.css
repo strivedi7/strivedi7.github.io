@@ -659,7 +659,7 @@ a {
   }
 }
 .w3-content {
-  max-width: 1188px;
+  max-width: 1288px;
   margin: auto;
 }
 .w3-rest {
@@ -886,6 +886,7 @@ a {
 .w3-container,
 .w3-panel {
   padding: 0.01em 16px;
+  /* border: 2px solid red; */
 }
 .w3-panel {
   margin-top: 16px;

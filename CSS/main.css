@@ -49,6 +49,16 @@ html {
   cursor: pointer;
 }
 
+.row {
+  margin-top: -15px;
+  margin-left: -15px;
+  background: #e8e8e8;
+  position: relative;
+  min-height: 1px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
+
 .white-font {
   color: white;
 }
@@ -60,10 +70,10 @@ html {
   font-size: 1.5em;
 }
 
-.right-margin{
+.right-margin {
   margin-right: 20px;
 }
-.right-2x-margin{
+.right-2x-margin {
   margin-right: 40px;
 }
 
